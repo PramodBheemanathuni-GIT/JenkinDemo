@@ -1,0 +1,12 @@
+<aura:component >
+	 <aura:attribute name="name" type="String" default="Pramod" access="public"/>
+    <aura:attribute name="Age" type="integer" default="32" access="public"/>
+    <aura:attribute name="Colour" type="String[]" default="['red','blue','green']" access="public"/>
+    <aura:attribute name="colourList" type="List" default="['apple','Orange','kiwi']" access="public"/>
+    <aura:attribute name="colourSet" type="Set" default="['black','blue','green']" access="public"/>
+    
+    <lightning:input aura:id="testAge" label="Enter Age"/>
+    Welcome --> {!v.name} , Age : {!v.Age} , favourite color : {!v.Colour[1]} , favourite fruit : {!v.colourList[1]},
+    eyes color --> {!v.colourSet[0]}
+    <lightning:button value="Component button" label="Component button" onclick="{!c.doAction}"/>
+</aura:component>

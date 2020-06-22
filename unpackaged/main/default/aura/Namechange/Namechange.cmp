@@ -1,0 +1,9 @@
+<aura:component >  
+    
+    <aura:attribute name="Anyname" type="String" default="text1" />
+    
+    <aura:handler  name="change" value="{!v.Anyname}" action="{!c.doinit1}"/>
+    <lightning:input name="enter text" value="{!v.Anyname}"/>
+    
+    
+</aura:component>

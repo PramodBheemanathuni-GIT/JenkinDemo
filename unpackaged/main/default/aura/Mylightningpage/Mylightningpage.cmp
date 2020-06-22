@@ -1,0 +1,35 @@
+<aura:component >
+    <aura:attribute name="truthly" type="boolean" default="False"/>
+    <aura:attribute name="colourList" type="List" default="['red','green','blue','yellow']"/>
+    <aura:attribute name="testMap" type="Map" />
+    <div class="slds-var-p-around_small" style="background-color:green; color:white;">
+        <h1 class="red">Hello World!</h1>
+        <p class="blue">This is Pramod</p>
+        <div style="background-color:red; color:white;">I am in Doing good</div>
+        <span> I want to be MVP in salesforce</span>
+    </div>
+    
+    <aura:if isTrue="{!v.truthly}">
+     TRUE
+        <aura:set attribute="else">
+        	False
+        </aura:set>
+    </aura:if>
+    
+    <br/>
+    
+    <aura:iteration items="{!v.colourList}" var="item">
+        {!item}<br/>
+    
+    </aura:iteration>
+    
+    <br/>
+    
+    <lightning:button label="Mapvalues" onclick="{!c.doCreateMap}"/>
+    <br/>
+    <aura:iteration items="{!v.testMap}" var="Map">
+        KEY--> {!Map.key} and Value --> {!Map.value} <br/>
+    
+    </aura:iteration>
+    
+</aura:component>

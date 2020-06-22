@@ -1,0 +1,18 @@
+<aura:component >
+    <div class="slds-page-header" role="banner">
+	<div class="slds-grid">
+		<div class="slds-col slds-has-flexi-truncate">
+			<div class="slds-media slds-media--center slds-no-space slds-grow">
+				<div class="slds-media__figure">
+					<lightning:icon class="slds-show" iconName="standard:case" alternativeText="" />
+				</div>
+				<div class="slds-media__body">
+					<p class="slds-text-heading--label">CASE CREATION</p>
+					<h1 class="slds-page-header__title slds-m-right--small slds-truncate slds-align-middle" title="Record Title">CASE CREATION</h1>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>
+	
+</aura:component>

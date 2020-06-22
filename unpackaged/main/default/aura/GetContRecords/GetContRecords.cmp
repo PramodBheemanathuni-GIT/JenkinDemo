@@ -1,0 +1,10 @@
+<aura:component controller="GetConRecordsController" >
+    <aura:attribute name="Opportunities" type="Opportunity[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.getops}"/> 
+    <ui:button label="submit" press="{!c.getops}"/>
+    <aura:iteration items="{!v.Opportunities}" var="op">
+        <p> {!op.Name}    {!op.closedate}</p>
+    </aura:iteration>
+    
+	
+</aura:component>

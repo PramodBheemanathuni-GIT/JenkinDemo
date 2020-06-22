@@ -1,0 +1,8 @@
+<aura:component >
+	<h1 >Hello Pramod</h1>
+    <div>
+        <div>i am red</div>
+        <div>i am blue</div>
+        <div>i am green</div>
+    </div>
+</aura:component>
